@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/emp
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  type-aliases-package: com.qf.sb2103.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/*.xml
